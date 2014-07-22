@@ -1,0 +1,37 @@
+div {
+    height: 8em;
+    width: 8em;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    margin: 0 auto;
+}
+.list_a {
+    border-radius: 1em;
+}
+.list_b {
+    border-radius: 1em 2em;
+}
+.list_c {
+    border-radius: 1em 2em 3em;
+}
+.list_d {
+    border-radius: 1em 2em 3em 4em;
+}
+.list_e {
+    border-radius: 1em / 1.5em;
+}
+span {
+    display: inline-block;
+    padding: 0.15em 0.35em;
+    background: #eee;
+    border: 1px solid gray;
+    margin: 1em 0.15em;
+    cursor: pointer;
+}
+
+/*
+
+
+
+
+*/

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script async >//making an AJAX call + store data in a global variable</script>
+    <script defer >// global variable (JSON) --> table </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            setTimeout(function () {
+                var script = document.createElement('script');
+                document.getElementsByName('head')[0].appendChild(script);
+                script.src = 'primes.js';
+            }, 5000);
+
+
+            document.body.firstElementChild.addEventListener('change', function(event){
+                console.log(event);
+                // selectedIndex property
+            });
+        });
+    </script>
+</head>
+<body>
+<form action="/upload" method="get" ></form>
+<select>
+    <option value="HTML5">HTML5</option>
+    <option value="XHTML 1.0">XHTML 1.0</option>
+    <option value="HTL 4.0">HTML 4.0</option>
+</select>
+<input type="radio" name="gender"/> Male
+<input type="radio" name="gender"/> Female
+<script src="primes.js"></script>
+</body>
+</html>

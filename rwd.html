@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/>
+
+    <style>
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font: 300 1em 'Helvetica Neue';
+        }
+
+        #menu {
+            /*height: 3em;*/
+            background-color: white;
+            box-shadow: 0 2px 5px #aaa;
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+        }
+        #menu > ul {
+            display: none;
+        }
+
+        div#wrapper {
+            margin-top: 4em;
+            padding: 1em;
+        }
+
+        span.burger_icon {
+            padding: 0.15em;
+            display: inline-block;
+            float: right;
+        }
+
+        @media (min-width: 1400px) {
+            /* hyper large displays */
+            span.burger_icon {
+                display: none;
+            }
+            #menu > ul {
+                display: block;
+            }
+            #menu li {
+                display: inline-block;
+                padding: 0.15em;
+                margin: 0.15em;
+                background-color: #eee;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1380px) {
+            /* desktop */
+            span.burger_icon {
+                display: none;
+            }
+            #menu > ul {
+                display: block;
+            }
+            #menu li {
+                display: inline-block;
+                padding: 0.15em;
+                margin: 0.15em;
+                background-color: #eee;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            /* tablets */
+            span.burger_icon {
+                display: none;
+            }
+            #menu > ul {
+                display: block;
+            }
+            #menu li {
+                display: inline-block;
+                padding: 0.15em;
+                margin: 0.15em;
+                background-color: #eee;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <span class="burger_icon"><i class="fa fa-bars fa-2x"></i></span>
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/aboutus">About Us</a></li>
+                <li><a href="#contact_us">Contact Us</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrapper">
+        <div id="contact_us">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut odio a magna scelerisque malesuada eget at urna. Vivamus quis risus in nunc tempus venenatis. Phasellus placerat vestibulum elit, a rhoncus diam aliquet vel. Aenean fringilla massa ligula, vulputate egestas leo volutpat eget. Aenean commodo nisi risus, non gravida libero commodo in. Aenean ut nisi turpis. Etiam posuere dapibus dolor, sed commodo orci porttitor a. Aliquam lacinia imperdiet tellus, quis ullamcorper magna facilisis sit amet. Nunc vehicula lacus ut lectus porttitor, non vehicula leo iaculis.
+        </div>
+        <div>
+            Some more data
+        </div>
+    </div>
+
+
+</body>
+</html>
